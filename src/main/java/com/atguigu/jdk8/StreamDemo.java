@@ -32,9 +32,5 @@ public class StreamDemo
 
         long result = list.stream().filter(t -> t.getAge() == 22).count();
         System.out.println(result);
-
-        List<Integer> list2 = Arrays.asList(1,2,3,3,3,4,0,-11,5,6,7,8,9);
-        //去重复数值+数值大于4+升序排列后只返回前3个元素
-        list2.stream().distinct().sorted().filter(n -> n>=4).limit(3).forEach(System.out::println);
     }
 }

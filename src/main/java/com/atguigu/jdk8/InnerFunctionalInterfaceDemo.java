@@ -25,15 +25,15 @@ public class InnerFunctionalInterfaceDemo
         Supplier<String> t="hello"::toUpperCase;//等价于Supplier<String> t= () -> { return "abc".toUpperCase();};
         System.out.println(t.get());
 
-        //3.断言式函数接口(有参有返)
+        //3.断言式函数接口(有参有boolean)
         //public interface Predicate<T>{public boolean test(T t);}
         Predicate<String> pre="##hello"::startsWith;//等价于Predicate<String> pre= (x) -> { return x.startsWith("##");};
         System.out.println(pre.test("##"));
 
         //4.功能型接口
         //public interface Function<T,R>{public R apply(T t)}
-        //Function<Integer, String> fun=String::valueOf;//等价于
-        Function<Integer, String> fun=(x) -> {return String.valueOf(x);};
+        Function<Integer, String> fun=String::valueOf;//等价于
+        //Function<Integer, String> fun=(x) -> {return String.valueOf(x);};
         System.out.println(fun.apply(1234).length());
     }
 }
