@@ -7,15 +7,15 @@ import lombok.experimental.Accessors;
 
 /**
  * @auther zzyy
- * @create 2018-08-10 14:53
+ * @create 2018-08-10 15:36
  */
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
 @Data
-public class User extends BaseEntity
+public class Person extends BaseEntity
 {
-    private Integer id;
-    private String  userName;
-    private Integer age;
+    private int id;
+    private String name;
+    private int age;
 }

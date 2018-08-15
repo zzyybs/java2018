@@ -13,9 +13,8 @@ import java.util.stream.Collectors;
  */
 public class StreamDemo2
 {
-    public static void main(String[] args) throws Exception
+    public void flatMapTest()
     {
-
         List<List<Integer>> list3 = new ArrayList<List<Integer>>();
         list3.add(Arrays.asList(1,2));
         list3.add(Arrays.asList(1,2,3,4,8));
@@ -27,7 +26,7 @@ public class StreamDemo2
         }
     }
 
-    public static void base64Test() throws UnsupportedEncodingException
+    public void base64Test() throws UnsupportedEncodingException
     {
         // 使用基本编码
         String base64encodedString = Base64.getEncoder().encodeToString("123".getBytes("utf-8"));
@@ -39,7 +38,7 @@ public class StreamDemo2
         System.out.println("原始字符串: " + new String(base64decodedBytes, "utf-8"));
     }
 
-    public static void forEachMap()
+    public void forEachMap()
     {
         List<String> list = Arrays.asList("a","b","c","d","e","f","b","c","d");
         list.stream().forEach(System.out::print);
