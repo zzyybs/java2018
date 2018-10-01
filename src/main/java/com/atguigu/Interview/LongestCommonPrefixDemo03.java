@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 题目03： 最长公共前缀(Leetcode)
  * 编写一个函数来查找字符串数组中的最长公共前缀。如果不存在公共前缀，返回空字符串""。
  */
-public class LongestCommonPrefixDemo
+public class LongestCommonPrefixDemo03
 {
     public static String longestCommonPrefix(String[] strArray)
     {
@@ -38,7 +38,7 @@ public class LongestCommonPrefixDemo
 
     public static void main(String[] args)
     {
-        String[] strArray = new String[]{"appxl","app","apply","apple","application","x"};
+        String[] strArray = new String[]{"appxl","app","apply","apple","application"};
 
         System.out.println(longestCommonPrefix(strArray));
     }

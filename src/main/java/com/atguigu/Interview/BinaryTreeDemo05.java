@@ -27,7 +27,7 @@ class TreeNode
  *  D     E            F
  *  题目05：按照上图构造一个树并进行前中后三种遍历
  */
-public class BinaryTreeDemo
+public class BinaryTreeDemo05
 {
     //前序遍历:(根，左，右)递归实现 A(root) B D E C F
     public static void beforeOrder(TreeNode node)

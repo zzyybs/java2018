@@ -5,7 +5,7 @@ package com.atguigu.Interview;
  * @create 2018-09-24 19:29
  * 题目02：JAVA 打印正三角形+倒三角形+菱形
  */
-public class printTriangleDemo
+public class printTriangleDemo02
 {
     public static void main(String[] args)
     {

@@ -3,10 +3,10 @@ package com.atguigu.Interview;
 /**
  * @auther zzyy
  * @create 2018-09-23 21:31
- * 题目01：请实现一个函数，将一个字符串中的每个空格替换成@。
+ * 题目06：请实现一个函数，将一个字符串中的每个空格替换成@。
  * 例如，当字符串为we like java.则经过替换之后的字符串为we@like@java.
  */
-public class replaceSpaceDemo
+public class replaceSpaceDemo06
 {
 
     /**

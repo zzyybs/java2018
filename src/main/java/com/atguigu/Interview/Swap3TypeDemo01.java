@@ -3,9 +3,9 @@ package com.atguigu.Interview;
 /**
  * @auther zzyy
  * @create 2018-09-21 14:19
- * 交换变量的3种方法，百度实习生面试题
+ * 题目01：交换变量的3种方法，百度实习生面试题
  */
-public class Swap3Type
+public class Swap3TypeDemo01
 {
 
     //第一种：通过第三个变量

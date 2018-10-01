@@ -19,7 +19,7 @@ package com.atguigu.Interview;
  *  假如string2 = "dabc",说明string1可以通过自旋操作变为string2字符串，返回true
  *  假如string2 = "abdc",说明string1不能通过自旋操作变为string2字符串，返回false
  */
-public class whirlStringDemo
+public class whirlStringDemo04
 {
     public static boolean testWhirl(String str1,String str2)
     {
