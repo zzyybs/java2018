@@ -14,9 +14,19 @@ package com.atguigu.Interview;
 public class BinarySearchDemo08
 {
 
+    /**
+     *
+     * @param intArray  初始化好的升序数组
+     * @param target    需要找到的目标值
+     * @return          目标值所在数组的下标位置
+     */
     public static int binarySearch(int[] intArray,int target)
     {
-        if(intArray == null || intArray.length == 0) return -1;
+        //非空判断
+        if (intArray == null || intArray.length == 0)
+        {
+            return -1;
+        }
 
         int low = 0;
         int high = intArray.length - 1;
@@ -24,22 +34,28 @@ public class BinarySearchDemo08
 
         while(low <= high)
         {
-            middle = low + (high - low)/2;
+            middle = low + (high - low)/2;//防止整形数据溢出
 
-            if(intArray[middle] == target)
+            if(target == intArray[middle])
             {
                 return middle;
-            }else if(intArray[middle] < target){
+            }else if(target > intArray[middle]) {
                 low = middle + 1;
-            }else {
+            }else{
                 high = middle - 1;
             }
         }
+
         return -1;
     }
+
+
+
     public static void main(String[] args)
     {
         int[] intArray = new int[]{1,3,5};
         System.out.println(binarySearch(intArray,5));
+
+        System.out.println(Integer.MAX_VALUE);//
     }
 }
