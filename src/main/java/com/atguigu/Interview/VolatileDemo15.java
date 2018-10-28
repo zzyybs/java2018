@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 class MyResource
 {
+    //一句话，对volatile修饰的变量所做的写操作立即能反映到其它线程中
     volatile int number = 0;
 
     /**
