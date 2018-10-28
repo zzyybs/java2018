@@ -3,6 +3,7 @@ package com.atguigu.Interview;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -26,6 +27,10 @@ public class OOM_ThreadDemo14
 {
     public static void main(String[] args) throws Exception
     {
+
+        new Hashtable<>();
+
+
         List<MyObject> list = new ArrayList<MyObject>();
 
         new Thread(() -> {
