@@ -45,7 +45,6 @@ public class BinarySearchDemo08
                 high = middle - 1;
             }
         }
-
         return -1;
     }
 
@@ -56,6 +55,6 @@ public class BinarySearchDemo08
         int[] intArray = new int[]{1,3,5};
         System.out.println(binarySearch(intArray,5));
 
-        System.out.println(Integer.MAX_VALUE);//
+        System.out.println(Integer.MAX_VALUE);// Integer.MAX_VALUE：2147483647
     }
 }
